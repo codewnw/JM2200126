@@ -1,37 +1,36 @@
-package com.jm2200126.jdbc;
+package com.jm2200126.jdbc.pstmt;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.Scanner;
 
 import com.jm2200126.jdbc.util.DbUtil;
 
-public class InsertRecords {
+public class DeleteRecordsUsingPstmt {
 
 	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		String userChoice = "Y";
+
 		try {
 			Connection con = DbUtil.getDbConnection();
-			Statement stmt = con.createStatement();
+			PreparedStatement pstmt = con.prepareStatement("DELETE FROM JM2200126_USER WHERE ID = ?");
 
-			String userChoice = "Y";
-			Scanner scan = new Scanner(System.in);
 			while (userChoice.equalsIgnoreCase("Y")) {
-				System.out.print("Enter Id: ");
+				System.out.print("Enter Id to delete record: ");
 				int id = Integer.parseInt(scan.next());
 
-				System.out.print("Enter name: ");
-				String name = scan.next();
+				pstmt.setInt(1, id);
 
-				int result = stmt.executeUpdate("INSERT INTO JM2200126_USER VALUES(" + id + ", '" + name + "')");
+				int result = pstmt.executeUpdate();
 				if (result == 1) {
-					System.out.println("Record inserted successfully.");
+					System.out.println("Record deleted successfully");
 				}
 
 				System.out.print("Do you wish to continue?(Y/N) ");
 				userChoice = scan.next();
 			}
-
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
