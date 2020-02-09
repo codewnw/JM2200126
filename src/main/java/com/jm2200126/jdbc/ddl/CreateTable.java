@@ -14,7 +14,7 @@ public class CreateTable {
 			// 2. Create command/statement
 			Statement stmt = con.createStatement();
 			// 3. Execute the command/statement
-			boolean result = stmt.execute("CREATE TABLE JM2200126_USER_TEMP(ID NUMBER, NAME VARCHAR)");
+			boolean result = stmt.execute("CREATE TABLE JM2200126_USER(ID NUMBER, NAME VARCHAR)");
 			// 4. Process the result
 			if (!result) {
 				System.out.println("Table created successfully.");
