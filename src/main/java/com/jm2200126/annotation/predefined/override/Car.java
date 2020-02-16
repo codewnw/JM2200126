@@ -1,4 +1,4 @@
-package com.jm2200126.annotation.override;
+package com.jm2200126.annotation.predefined.override;
 
 public class Car extends Vehicle {
 

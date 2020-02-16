@@ -1,0 +1,15 @@
+com.jm2200126.annotation.custom.comment
+com.jm2200126.annotation.custom.nocomment
+com.jm2200126.annotation.predefined.deprecated
+com.jm2200126.annotation.predefined.override
+com.jm2200126.annotation.predefined.supressewarnnings
+com.jm2200126.jdbc
+com.jm2200126.jdbc.batch.pstmt
+com.jm2200126.jdbc.batch.stmt
+com.jm2200126.jdbc.blob
+com.jm2200126.jdbc.ddl
+com.jm2200126.jdbc.metadata
+com.jm2200126.jdbc.pstmt
+com.jm2200126.jdbc.stmt
+com.jm2200126.jdbc.tcl
+com.jm2200126.jdbc.util
