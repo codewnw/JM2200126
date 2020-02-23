@@ -13,7 +13,7 @@ import java.lang.annotation.Target;
 @Target({ TYPE, METHOD })
 public @interface ClassInfo {
 
-	String author() default "Foo";
+	String author();
 
 	String[] reviewers() default { "Fowler" };
 
