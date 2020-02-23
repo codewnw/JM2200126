@@ -2,18 +2,36 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	crossorigin="anonymous">
 <title>Login</title>
 </head>
 <body>
-	<h1>Login !!!</h1>
-	<hr>
-	
-	<form method="post" action="login">
-		Username: <input type="text" name="username" placeholder="Enter username"> <br>
-		Password: <input type="password" name="password" placeholder="Enter password">
-		<br> <input type="submit" value="Login">
-	</form>
 
 
+	<div class="container">
+
+		<div class="jumbotron">
+			<h1>Login !!!</h1>
+			<p>Please fill the login details correctly.</p>
+		</div>
+		<form method="post" action="login">
+			<div class="form-group">
+				<label for="exampleInputEmail1">Username</label> <input type="text"
+					name="username" class="form-control" id="exampleInputEmail1"
+					aria-describedby="emailHelp"> <small id="emailHelp"
+					class="form-text text-muted">We'll never share your username
+					with anyone else.</small>
+			</div>
+			<div class="form-group">
+				<label for="exampleInputPassword1">Password</label> <input
+					type="password" name="password" class="form-control"
+					id="exampleInputPassword1">
+			</div>
+			<button type="submit" class="btn btn-primary">Login</button>
+		</form>
+	</div>
 </body>
 </html>
