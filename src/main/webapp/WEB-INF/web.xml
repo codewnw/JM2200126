@@ -16,6 +16,15 @@
 		<url-pattern>/login</url-pattern>
 	</servlet-mapping>
 
+	<servlet>
+		<servlet-name>myDateServlet</servlet-name>
+		<servlet-class>com.jm2200126.servlet.DateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myDateServlet</servlet-name>
+		<url-pattern>/date</url-pattern>
+	</servlet-mapping>
+
 
 
 </web-app>
