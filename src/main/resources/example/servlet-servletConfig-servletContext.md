@@ -15,15 +15,6 @@ plus institute address on successful enrollment.
  - Hello, **Virat**
    Your trainer is **John** and his mobile number is **1234567890**.
    Classes will be in **MyInstitute, Bangalore** campus.
-   
-### Development process
-- Create java-enrollment.html form
-- Create php-enrollment.html form
-- Create JavaServlet for showing dynamic response
- - Configure JavaServlet with Java trainer information
-- Create PhpServlet for showing dynamic response
- - Configure PhpServlet with Java trainer information
-- Configure application for institute information
 
 ### Interpret dynamic data
 - Student name is changing all the time
@@ -34,3 +25,12 @@ plus institute address on successful enrollment.
 - Student name - Rohit/Virat - HttpServletRequest (request object)
 - Trainer info(name and number) - Bob and 0987654321 - ServletConfig
 - Institute info (name and address) - MyInstitute, Banagelore - ServletContext
+
+### Development process
+- Create `java-enrollment.html` form
+- Create `php-enrollment.html` form
+- Create JavaServlet for showing dynamic response
+  - Configure JavaServlet with Java trainer information
+- Create PhpServlet for showing dynamic response
+  - Configure PhpServlet with Java trainer information
+- Configure application for institute information

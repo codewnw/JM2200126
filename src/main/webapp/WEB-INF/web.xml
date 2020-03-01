@@ -20,11 +20,19 @@
 		<servlet-name>myDateServlet</servlet-name>
 		<servlet-class>com.jm2200126.servlet.DateServlet</servlet-class>
 	</servlet>
+
 	<servlet-mapping>
 		<servlet-name>myDateServlet</servlet-name>
 		<url-pattern>/date</url-pattern>
 	</servlet-mapping>
 
 
-
+	<context-param>
+		<param-name>institute</param-name>
+		<param-value>MyInstitute</param-value>
+	</context-param>
+	<context-param>
+		<param-name>instituteAddress</param-name>
+		<param-value>Banaglore</param-value>
+	</context-param>
 </web-app>
