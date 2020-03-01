@@ -1,6 +1,8 @@
 package com.jm2200126.servlet;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,6 +15,7 @@ public class RegistrationServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		System.out.println(this.getClass().getSimpleName());
 		String name = request.getParameter("name");
 		String email = request.getParameter("email");
 		String age = request.getParameter("age");
@@ -31,6 +34,12 @@ public class RegistrationServlet extends HttpServlet {
 		for (int i = 0; i < courses.length; i++) {
 			System.out.print(courses[i] + " ");
 		}
+		System.out.println("");
+
+		// forward this to profile servlet
+		request.setAttribute("message", "Registration Successful!!!");
+		RequestDispatcher rd = request.getRequestDispatcher("profile");
+		rd.forward(request, response);
 
 	}
 

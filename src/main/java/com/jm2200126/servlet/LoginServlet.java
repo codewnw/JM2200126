@@ -17,6 +17,7 @@ public class LoginServlet extends HttpServlet {
 		if (username.equals(password)) {
 			resp.sendRedirect("profile.html");
 		} else {
+//			resp.sendRedirect("https://www.google.com/");
 			resp.sendRedirect("login.html");
 		}
 	}
