@@ -37,7 +37,7 @@ public class RegistrationServlet extends HttpServlet {
 		System.out.println("");
 
 		// forward this to profile servlet
-		request.setAttribute("message", "Registration Successful!!!");
+		request.setAttribute("message", "Registration Successful from registration servlet.!!!");
 		RequestDispatcher rd = request.getRequestDispatcher("profile");
 		rd.forward(request, response);
 

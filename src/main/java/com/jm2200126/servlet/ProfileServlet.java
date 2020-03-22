@@ -22,6 +22,10 @@ public class ProfileServlet extends HttpServlet {
 		System.out.println(this.getClass().getSimpleName());
 		String msg = (String) request.getAttribute("message");
 		System.out.println(msg);
+		request.setAttribute("message", "Registration Successful from profile servlet.!!!");
+		String msg2 = (String) request.getAttribute("message");
+		System.out.println(msg2);
+		request.removeAttribute("message");
 		
 		RequestDispatcher rd = request.getRequestDispatcher("profile-after-registration.html");
 		rd.forward(request, response);
