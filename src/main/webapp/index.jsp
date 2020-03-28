@@ -13,5 +13,11 @@
 		<li><a href="java-enrollment.html">Java Enrollment</a></li>
 		<li><a href="php-enrollment.html">PHP Enrollment</a></li>
 	</ul>
+
+	<h1>JSP</h1>
+	<ul>
+		<li><a href="jsp/learn-scripting-tags.jsp">Learn Scripting Tags</a></li>
+		<li><a href="jsp/login.jsp">Login</a></li>
+	</ul>
 </body>
 </html>
