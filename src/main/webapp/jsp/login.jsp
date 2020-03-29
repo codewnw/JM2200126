@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ page errorPage="my-error-page.jsp" %>
+<%@ page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,11 +9,15 @@
 <title>Login</title>
 </head>
 <body>
+
+	<%@ include file="header.jsp"%>
+
 	<h1>Login page</h1>
-	<%
+	 <%
 		String msg = request.getParameter("msg");
 	%>
 	<p style="color: red"><%=msg == null ? "" : msg%></p>
+	<%-- <p style="color: red">${param.msg}</p> --%>
 	<form method="post" action="process-login.jsp">
 		<table border="1">
 			<tr>
@@ -30,5 +36,7 @@
 			</tr>
 		</table>
 	</form>
+	
+	<%@ include file="footer.jsp"%>
 </body>
 </html>
