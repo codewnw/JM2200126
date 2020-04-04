@@ -17,7 +17,7 @@
 ## JSP Actions
 - jsp:include
 - jsp:forward
-- jsp:bean
+- jsp:useBean
 - jsp:parma
 - jsp:setProperty
 - jsp:getProperty

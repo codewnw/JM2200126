@@ -20,6 +20,7 @@
 		<li><a href="jsp/login.jsp">Login</a></li>
 		<li><a href="jsp/collection.jsp">Collection</a></li>
 		<li><a href="jsp/calculator.jsp">Calculator</a></li>
+		<li><a href="jsp/registration.jsp">Registration</a></li>
 	</ul>
 </body>
 </html>
