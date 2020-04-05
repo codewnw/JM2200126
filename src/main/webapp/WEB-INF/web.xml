@@ -44,7 +44,7 @@
 
 	<context-param>
 		<param-name>institute</param-name>
-		<param-value>MyInstitute</param-value>
+		<param-value>MyInstitute Pvt. Ltd.</param-value>
 	</context-param>
 	<context-param>
 		<param-name>instituteAddress</param-name>
