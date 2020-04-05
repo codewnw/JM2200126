@@ -46,6 +46,10 @@
 			<td>${paramValues.courses[0]}${paramValues.courses[1]}
 				${paramValues.courses[2]}</td>
 		</tr>
+		<td>Courses From Object:</td>
+			<td>${requestScope.std.courses[0]}${requestScope.std.courses[1]}
+				${requestScope.std.courses[2]}</td>
+		</tr>
 	</table>
 	<hr>
 	<h1>Header and Header Values</h1>
