@@ -28,5 +28,10 @@
 	<ul>
 		<li><a href="el/registration.jsp">Registration</a></li>
 	</ul>
+	
+		<h1>JSTL - JavaServer Pages Standard Tag Library</h1>
+	<ul>
+		<li><a href="jstl/jstl.jsp">Learn JSTL</a></li>
+	</ul>
 </body>
 </html>

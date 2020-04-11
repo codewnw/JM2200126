@@ -13,7 +13,7 @@
 ## JSP Directives
 - include
 - page
-- JSTL (to be taught later as separate concept)
+- JSTL (to be taught later as separate concept) - JavaServer Pages Standard Tag Library
 ## JSP Actions
 - jsp:include
 - jsp:forward
